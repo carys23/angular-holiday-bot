@@ -6,35 +6,36 @@
         <!-- login -->
 
         <button mat-button-update mat-raised-button color="primary" class="login" id="login" *ngIf="this.isButtonVisible" (click)="this.isButtonVisible = false">
-    
+            
             <div *ngIf="this.isButtonVisible" (click)="this.isButtonVisible = false" then thenBlock> 
                 {{enter? 'continents' : 'Guest'}} 
 
             </div>
         </button>
+        
     
-            
-           <!-- <div *ngIf="enter; then thenBlock else elseBlock"> </div>
+           <div *ngIf="this.isButtonVisible; then thenBlock else elseBlock"> </div>
     
         <ng-template #thenBlock> 
-            
-            <div class="response">Hello what location would you like to take your holiday in? </div>
-            
+           
+            <div class="response">Holidays are comming </div>
+           
             
 
         </ng-template>
         
             <ng-template #elseBlock>
-        
+                
+                <div class="response">Hello what location would you like to take your holiday in? </div>
+            
         
         <div class="container" id="first-choice">
-    
 
-        <div class="response">Holidays are comming </div>
+         
         </div>
         
         
-        </ng-template> -->
+        </ng-template>
 
 
 
