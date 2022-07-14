@@ -4,7 +4,11 @@ import { Component, OnInit, Input } from '@angular/core';
 declare var myjson: any;
 declare var africaHoliday: any;
 declare var asiaHoliday: any;
-
+declare var usaHoliday: any;
+declare var europeHoliday: any;
+declare var antarcticaHoliday: any;
+declare var northAmericaHoliday: any;
+declare var australiaHoliday: any;
 @Component({
   selector: 'app-bot',
   templateUrl: './bot.component.html',
@@ -17,9 +21,20 @@ export class BotComponent implements OnInit {
   continents: any;
   africa = africaHoliday;
   asia = asiaHoliday;
+  aus = australiaHoliday;
+  usa = usaHoliday;
+  eur = europeHoliday;
+  ant = antarcticaHoliday;
+  nAmerca = northAmericaHoliday;
   isButtonVisible = true;
   africaButton = true;
   asiaButton = true;
+  ausButton  = true;
+  nAButton  = true;
+  antButton  = true;
+  eurButton  = true;
+  usaButton = true;
+
   // msg:string;
 
   constructor() { }
@@ -32,6 +47,11 @@ export class BotComponent implements OnInit {
   asiaClick(){
     this.asia
     return this.asia
+  }
+
+  ausClick(){
+    this.aus
+    return this.aus
   }
 
 
