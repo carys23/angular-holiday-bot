@@ -1,4 +1,4 @@
-// import {myjson} from './data.js' 
+import {myjson} from './data.js' 
 
 
 
@@ -13,6 +13,8 @@ function getHolidayByType(holidayList, type) {
 }
 
 let africaHoliday = getHolidaysFromContinent(holidayList, "Africa");
+
+
 
 console.log(africaHoliday)
 

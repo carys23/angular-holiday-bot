@@ -1,4 +1,4 @@
-import {myjson} from './data.mjs' 
+// import {myjson} from './data.js' 
 
 
 

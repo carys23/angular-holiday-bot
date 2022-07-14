@@ -1,7 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 // import { africaHoliday } from '.a';
 
-declare const africaHoliday: any;
+declare var myjson: any;
+declare var africaHoliday: any;
 
 @Component({
   selector: 'app-bot',
@@ -10,13 +11,18 @@ declare const africaHoliday: any;
 })
 
 export class BotComponent implements OnInit {
-  // data = africaHoliday;
+  data = myjson;
   title = 'hoildays are here';
+  africa = africaHoliday;
   
 
   constructor() { }
 
   ngOnInit(): void {
+    // let holidayList = myjson
+
+  
+  
     // this.data = 'testing';
   
   }
