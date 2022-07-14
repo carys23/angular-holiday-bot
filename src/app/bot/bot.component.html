@@ -33,6 +33,10 @@
                 </div>
             </button>
 
+       
+
+
+
             <!-- Africa -->
             <button mat-button-update mat-raised-button color="primary" class="b" id="africa"
                 (click)=" this.africaButton = false">
@@ -91,36 +95,22 @@
 
             <ng-template #thenBlock>
 
-                first
+               
 
             </ng-template>
 
             <ng-template #elseBlock>
 
-                <div class="container" id="first-choice">
+                <div *ngFor="let countries of asia">
 
-                    seconded
+                    <button mat-button-update mat-raised-button color="primary" class="b" id="asia" (click)="asiaClick()">
+                        {{ countries.Country }}
+                    </button>
+    
+        
                 </div>
 
-
-
-
-
-                <div *ngIf="this.africaButton; then thenBlock else elseBlock"> </div>
-
-                <ng-template #thenBlock>
-
-                    first
-
-                </ng-template>
-
-                <ng-template #elseBlock>
-
-                    <div class="container" id="first-choice">
-
-                        seconded
-                    </div>
-
+            </ng-template>
 
 
 
@@ -150,30 +140,18 @@
             </div>
         </ng-template> -->
 
-
-                    <!-- <button mat-button-update mat-raised-button color="primary" class="b" id="asia" (click)="asiaClick()">
-            <div *ngIf="this.asiaButton" (click)="this.asiaButton = false" then thenBlock>
-                {{asiaButton? 'Asia' : 'false'}}  
-            </div>
-        </button> -->
-
-                    <!-- <div *ngIf="this.asiaButton; then thenBlock else elseBlock" (click)="this.asiaButton = false"> </div>
+<!-- 
+        <div *ngIf="this.asiaButton; then thenBlock else elseBlock"> </div>
 
         <ng-template #thenBlock>
+            <div class="response">first </div>
 
+        </ng-template>
 
-        </ng-template> -->
-
-                    <!-- <ng-template #elseBlock>
-
-            <div *ngFor="let countries of asia">
-
-                <button mat-button-update mat-raised-button color="primary" class="b" id="asia" (click)="asiaClick()">
-                    {{ countries.Country }}
-                </button>
-
-            </div>
-        </ng-template> -->
+        <ng-template #elseBlock>
+            <div class="response">no </div>
+            <div class="container" id="first-choice">
+            </div> -->
 
 
 
