@@ -1,0 +1,85 @@
+html, body {
+    display: flex;
+    margin:0px;
+  }
+
+.bot{
+    display: flex;
+    background-color: rgb(228, 235, 235);
+    width: 20%;
+    height: 22%;
+    position: absolute;
+    bottom: 5px; 
+    right: 5px;
+    display: inline-block;
+    border-style: groove ;
+    border-radius: 25px; 
+}
+
+.login-div{
+    display: flex;
+    height: 60%; 
+    /* width: 60%;  */
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    /* justify-content: center; */
+
+}
+
+.bot-image{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    /* flex-direction: row; */
+
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    height: 30%;
+    justify-content: center;
+
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    color: rgb(2, 2, 2);
+    font-size: 20px;
+    font-family: 'Raleway';
+    text-decoration: none;
+}
+
+.login , .guest{
+    display: flex;
+    padding: 50%;
+    font-size: 20px;
+    font-family: 'Raleway';
+    background-color: azure;
+    flex-direction: row;
+    border-style: groove ;
+    border-radius: 15px;
+}
+
+h1 {
+    display: flex;
+    font-size: 100px;
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 900px;
+    height: 30px;
+}
+
+.login:hover, .guest:hover {
+    background-color: black;
+    color: white;
+}
+
+.link:hover{
+    background-color: black;
+    color: white;
+}
