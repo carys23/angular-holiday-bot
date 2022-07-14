@@ -16,6 +16,7 @@ let africaHoliday = getHolidaysFromContinent(holidayList, "Africa");
 
 
 
+
 console.log(africaHoliday)
 
 // export {africaHoliday};

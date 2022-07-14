@@ -3,18 +3,36 @@ html, body {
     margin:0px;
   }
 
-.bot{
+.response {
+    padding-top: 12px;
+    padding-left: 4px;
+    font-size: 21px;
+
+  }
+#bot
+{
     display: flex;
     background-color: rgb(228, 235, 235);
-    width: 20%;
-    height: 22%;
+    width: 25%;
+    height: 35%;
     position: absolute;
-    bottom: 5px; 
-    right: 5px;
-    display: inline-block;
+    bottom: 9px; 
+    right: 11px;
+    
+}
+
+
+/* .bot{
+    display: flex;
+    background-color: rgb(228, 235, 235);
+    width: 25%;
+    height: 15%;
+    position: absolute;
+    bottom: 15px; 
+    right: 11px;
     border-style: groove ;
     border-radius: 25px; 
-}
+} */
 
 .login-div{
     display: flex;
@@ -36,34 +54,42 @@ html, body {
 
 }
 
-.buttons{
+.mat-raised-button{
     display: flex;
+    /* padding-top: 90px; */
     flex-direction: row;
-    width: 40%;
-    height: 30%;
+    width: 70px;
+    height: 50px;
     justify-content: center;
-
+    position: relative;
+    flex-wrap: wrap;
+    background-color: rgba(43, 18, 58, 0.418);
+    justify-content: space-around;
+   
 }
 
-.link{
+.button, .login {
     display: flex;
+    width: 20%;
+    height: 20%;
     justify-content: center;
-    color: rgb(2, 2, 2);
-    font-size: 20px;
-    font-family: 'Raleway';
-    text-decoration: none;
+   
+    /* margin-right: 0; */
+
 }
 
-.login , .guest{
+
+#buttons {
     display: flex;
-    padding: 50%;
-    font-size: 20px;
-    font-family: 'Raleway';
-    background-color: azure;
-    flex-direction: row;
-    border-style: groove ;
-    border-radius: 15px;
+    flex-direction: column;
+    width: 5%;
+    height: 8%;
+    flex-wrap: wrap;
+    align-items: center;
+    
 }
+
+
 
 h1 {
     display: flex;
@@ -74,12 +100,8 @@ h1 {
     height: 30px;
 }
 
-.login:hover, .guest:hover {
-    background-color: black;
-    color: white;
+.mat-raised-button:hover {
+    background-color:#767eac;
+   
 }
 
-.link:hover{
-    background-color: black;
-    color: white;
-}

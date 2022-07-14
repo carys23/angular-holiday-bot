@@ -373,8 +373,12 @@ function getHolidayByType(holidayList, type) {
     return holidayList.filter(holiday => holiday.Category === type);
 }
 
+
+
 let africaHoliday = getHolidaysFromContinent(holidayList, "Africa");
+let asiaHoliday = getHolidaysFromContinent(holidayList, "Asia");
+
+console.log(asiaHoliday)
 
 console.log(africaHoliday)
 
-// export {myjson};

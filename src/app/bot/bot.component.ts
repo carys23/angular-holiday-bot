@@ -3,6 +3,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 declare var myjson: any;
 declare var africaHoliday: any;
+declare var asiaHoliday: any;
 
 @Component({
   selector: 'app-bot',
@@ -12,16 +13,39 @@ declare var africaHoliday: any;
 
 export class BotComponent implements OnInit {
   data = myjson;
-  title = 'hoildays are here';
+  enter: any;
+  continents: any;
   africa = africaHoliday;
-  
+  asia = asiaHoliday;
+  isButtonVisible = true;
+  africaButton = true;
+  asiaButton = true;
+  // msg:string;
 
   constructor() { }
+
+  africaClick(){
+    this.africa
+    
+    return this.africa
+  }
+  asiaClick(){
+    this.asia
+    return this.asia
+  }
+
+
+
+  clickEvent()
+  {
+    this.enter= true;
+    return this.enter
+  }
 
   ngOnInit(): void {
     // let holidayList = myjson
 
-  
+    
   
     // this.data = 'testing';
   
