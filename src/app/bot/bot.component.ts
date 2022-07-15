@@ -25,7 +25,7 @@ export class BotComponent implements OnInit {
   usa = usaHoliday;
   eur = europeHoliday;
   ant = antarcticaHoliday;
-  nAmerca = northAmericaHoliday;
+  nAmerica = northAmericaHoliday;
   isButtonVisible = true;
   africaButton = true;
   asiaButton = true;
@@ -52,6 +52,27 @@ export class BotComponent implements OnInit {
   ausClick(){
     this.aus
     return this.aus
+  }
+
+  usaClick(){
+    this.usa
+    return this.usa
+  }
+
+  antClick(){
+    
+    this.ant
+    return this.ant
+  }
+
+  nAmericaClick(){
+    this.ant
+    return this.ant
+  }
+
+  eurClick(){
+    this.eur
+    return this.eur
   }
 
 

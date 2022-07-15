@@ -383,7 +383,7 @@ let antarcticaHoliday = getHolidaysFromContinent(holidayList, "Antarctica");
 let northAmericaHoliday = getHolidaysFromContinent(holidayList, "Asia");
 let australiaHoliday = getHolidaysFromContinent(holidayList, "Australia");
 
-console.log(asiaHoliday)
+// console.log(asiaHoliday)
 
-console.log(africaHoliday)
+console.log(antarcticaHoliday)
 
