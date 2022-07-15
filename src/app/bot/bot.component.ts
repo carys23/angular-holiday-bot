@@ -47,11 +47,13 @@ export class BotComponent implements OnInit {
   africaClick(){
     this.africa
     this.hideBtn
+    this.africaButton = false
     
   }
   asiaClick(){
     this.asia
     this.hideBtn
+    this.asiaButton = false
 
   }
 
