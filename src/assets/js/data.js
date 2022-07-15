@@ -376,7 +376,7 @@ function getHolidayByType(holidayList, type) {
 
 
 let africaHoliday = getHolidaysFromContinent(holidayList, "Africa");
-let usaHoliday = getHolidaysFromContinent(holidayList, "USA");
+let usaHoliday = getHolidaysFromContinent(holidayList, "North America");
 let europeHoliday = getHolidaysFromContinent(holidayList, "Europe");
 let asiaHoliday = getHolidaysFromContinent(holidayList, "Asia");
 let antarcticaHoliday = getHolidaysFromContinent(holidayList, "Antarctica");

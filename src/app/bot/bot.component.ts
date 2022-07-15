@@ -73,8 +73,9 @@ export class BotComponent implements OnInit {
   }
 
   nAmericaClick(){
-    this.ant
+    this.nAmerica
     this.hideBtn
+    this.nAButton = false
   }
 
   eurClick(){

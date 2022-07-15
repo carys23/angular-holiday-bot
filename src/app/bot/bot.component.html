@@ -53,10 +53,9 @@
 
             <button mat-button-update mat-raised-button color="primary" class="b" id="btn" (click)="this.africaButton = false">
                 
-                {{africaButton? 'Africa' : 'Asia'}}
+                {{africaButton? 'Africa' : 'Africa'}}
                 <div *ngIf="africaButton; then thenBlock else africaBlock"> </div>
-                <!-- <div *ngIf="this.asiaButton; then thenBlock else asiaBlock"> 
-                </div> -->
+              
             </button>
             <ng-template #thenBlock>
                 
@@ -71,189 +70,117 @@
                         {{ countries.Country }}
                     </button>
                 </div> 
-              
+
                 </ng-template>
 
 
 
 
-                   <!-- North America -->
-            <!-- <button mat-button-update mat-raised-button color="primary" class="b" id="btn"
-                    *ngIf="this.nAButton" (click)=" this.nAButton = false">
-                    <div *ngIf="this.usaButton" (click)="this.nAButton = false" then thenBlock>
-                        {{nAButton? 'North America' : 'false'}}
-                    </div>
-                </button> -->
-
-
-
-            <!-- USA -->
-            <!-- <button mat-button-update mat-raised-button color="primary" class="b" id="btn"> 
-                    <div *ngIf="this.usaButton" (click)="this.usaButton = false" then thenBlock>
-                        {{usaButton? 'USA' : 'false'}}
-                    </div>
-                </button> -->
-
-
-            <!-- Antarcica -->
-            <!-- <button mat-button-update mat-raised-button color="primary" class="b" id="btn"
-                        (click)=" this.antButton = false">
-                        <div *ngIf="this.antButton" (click)="this.antButton = false" then thenBlock>
-                            {{antButton? 'Antarcica' : 'false'}}
-                        </div>
-                    </button> -->
-
-            <!-- Europe -->
-            <!-- <button mat-button-update mat-raised-button color="primary" class="b" id="btn"
-                        (click)=" this.eurButton = false">
-                        <div *ngIf="this.eurButton" (click)="this.eurButton = false" then thenBlock>
-                            {{eurButton? 'Europe' : 'false'}}
-                        </div>
-                    </button> -->
-
-            <!-- Australia -->
-            <!-- <button mat-button-update mat-raised-button color="primary" class="b" id="btn"
-                        (click)=" this.ausButton = false">
-                        <div *ngIf="this.ausButton" (click)="this.ausButton = false" then thenBlock>
-                            {{ausButton? 'Australia' : 'false'}}
-                        </div>
-                    </button> -->
-
-
-
-
+                  <!-- Europe -->
                 
-            <!-- USA -->
-
-            <!-- <div *ngIf="this.usaButton; then thenBlock else elseBlock"> </div>
-
-            <ng-template #thenBlock>
-
-
-            </ng-template>
-
-            <ng-template #elseBlock>
-                    
-                <div *ngFor="let countries of usa">
-
-                    <button mat-button-update mat-raised-button color="primary" class="b" id="usa" (click)="usaClick()">
-                        {{ countries.Country }}
-                    </button>
-    
-                    
-                </div>  -->
-
-                <!-- <ng-template #thenBlock>
-             -->
-
-            <!-- Africa -->
-<!-- <div *ngIf="this.africaButton; then thenBlock else africaBlock"> </div> -->
-
-    
-             
-                    
+            <button mat-button-update mat-raised-button color="primary" class="b" id="btn" (click)="this.eurButton = false">
+                
+                {{eurButton? 'Europe' : 'Europe'}}
+                <div *ngIf="eurButton; then thenBlock else eurBlock"> </div>
               
-                    
-               
-
-
-
-
+            </button>
+            <ng-template #thenBlock>
                 
-            <!-- Asia -->
-<!-- 
-            <div *ngIf="this.asiaButton; then thenBlock else asiaBlock"> </div>
-
-            <ng-template #thenBlock>
-
+ 
             </ng-template>
+            
 
-            <ng-template #asiaBlock>
+            <ng-template #eurBlock>
+                <div *ngFor="let countries of eur">
 
-                <div *ngFor="let countries of asia">
-
-                    <button mat-button-update mat-raised-button color="primary" class="b" id="asia"
-                        (click)="asiaClick()">
+                    <button mat-button-update mat-raised-button color="primary" class="b" id="btn" (click)="eurClick()">
                         {{ countries.Country }}
                     </button>
+                </div> 
 
-                </div>
+                </ng-template>
 
-            </ng-template> -->
-
-
-
-
-     
-
-
-
-
-
-
-
-
-
-
-
-            <!-- North America -->
-
-            <!-- <div *ngIf="this.nAButton; then thenBlock else elseBlock"> </div>
-
-            <ng-template #thenBlock>
-
-
-            </ng-template>
-
-            <ng-template #elseBlock>
-                    
-                <div *ngFor="let countries of nAmerica">
-
-                    <button mat-button-update mat-raised-button color="primary" class="b" id="north" (click)="nAmericaClick()">
-                        {{ countries.Country }}
-                    </button>
-    
-                    
-                </div> -->
-
-
-            <!-- aus  -->
-            <!-- <div *ngIf="this.ausButton; then thenBlock else elseBlock"> </div>
-
+                 <!-- Antarcica -->
+                 <button mat-button-update mat-raised-button color="primary" class="b" id="btn" (click)="this.antButton = false">
+                
+                    {{antButton? 'Antarcica' : 'Antarcica'}}
+                    <div *ngIf="antButton; then thenBlock else antBlock"> </div>
+                  
+                </button>
                 <ng-template #thenBlock>
-    
+                    
+     
                 </ng-template>
+                
     
-                <ng-template #elseBlock>
-                 
-                        
-                    <div *ngFor="let countries of aus">
+                <ng-template #antBlock>
+                    <div *ngFor="let countries of ant">
     
-                        <button mat-button-update mat-raised-button color="primary" class="b" id="aus" (click)="ausClick()">
+                        <button mat-button-update mat-raised-button color="primary" class="b" id="btn" (click)="antClick()">
                             {{ countries.Country }}
                         </button>
-                        
-                    </div> -->
-
-            <!-- ant -->
-
-            <!-- <div *ngIf="this.antButton; then thenBlock else elseBlock"> </div>
-
-                    <ng-template #thenBlock>
-        
+                    </div> 
+    
                     </ng-template>
-        
-                    <ng-template #elseBlock>
-                     
-                            
-                        <div *ngFor="let ants of ant">
-        
-                            <button mat-button-update mat-raised-button color="primary" class="b" id="ant" (click)="antClick()">
-                               
-                            </button>
-                            {{ ants.Country }}
-                         
-                        </div>  -->
+
+            <!-- Australia -->
+            <button mat-button-update mat-raised-button color="primary" class="b" id="btn" (click)="this.ausButton = false">
+                
+                {{ausButton? 'Australia' : 'Australia'}}
+                <div *ngIf="ausButton; then thenBlock else ausBlock"> </div>
+              
+            </button>
+            <ng-template #thenBlock>
+                
+ 
+            </ng-template>
+            
+
+            <ng-template #ausBlock>
+                <div *ngFor="let countries of aus">
+
+                    <button mat-button-update mat-raised-button color="primary" class="b" id="btn" (click)="ausClick()">
+                        {{ countries.Country }}
+                    </button>
+                </div> 
+
+                </ng-template>
+
+
+                <!-- usa -->
+
+                <button mat-button-update mat-raised-button color="primary" class="b" id="btn" (click)="this.usaButton = false">
+                
+                    {{usaButton? 'North America' : 'North America'}}
+                    <div *ngIf="usaButton; then thenBlock else usaBlock"> </div>
+                  
+                </button>
+                <ng-template #thenBlock>
+                    
+     
+                </ng-template>
+                
+    
+                <ng-template #usaBlock>
+                    <div *ngFor="let countries of usa">
+    
+                        <button mat-button-update mat-raised-button color="primary" class="b" id="btn" (click)="usaClick()">
+                            {{ countries.Country }}
+                        </button>
+                    </div> 
+    
+                    </ng-template>
+            <!-- nortn amercia  -->
+
+
+                    
+
+      
+            
+
+
+
+
 
 
 
