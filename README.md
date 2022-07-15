@@ -25,6 +25,8 @@
 *   screen layout based on screen size
 
 
-<a href="https://github.com/carys23/angular-holiday-bot/blob/529f5de30ce4d95dd60a085f1f063c4660739f02/uml.html" target="_blank"></a>
+<a href="uml.html" target="_blank"></a>
 
-<a href="https://github.com/carys23/angular-holiday-bot/blob/529f5de30ce4d95dd60a085f1f063c4660739f02/wireframe.html"_blank"></a>
+<a href="https://github.com/carys23/angular-holiday-bot/blob/main/wireframe.html#L1"target="_blank"></a>
+
+
