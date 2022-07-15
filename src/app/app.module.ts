@@ -16,15 +16,20 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import {HttpParams} from "@angular/common/http";
 import { DatePipe } from '@angular/common';
+import { AppRoutingModule } from './app-routing.module';
+import { HoildaysComponent } from './hoildays/hoildays.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     BotComponent,
+    HoildaysComponent,
 
   ],
   imports: [
-    BrowserModule,
+    RouterModule,
     BrowserAnimationsModule,
     BrowserModule,
     BrowserAnimationsModule,
@@ -36,8 +41,18 @@ import { DatePipe } from '@angular/common';
     HttpClientModule,
     RouterModule,
     FormsModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+const routes: Routes = [
+  { path: 'home', component: BotComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+]
+
+// RouterModule.forRoot(routes),
+

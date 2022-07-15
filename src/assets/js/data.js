@@ -387,5 +387,10 @@ let australiaHoliday = getHolidaysFromContinent(holidayList, "Australia");
 
 console.log(antarcticaHoliday)
 
-let hideBtn = document.getElementById('btn').style.display ='none';
+let hideBtn = document.getElementById('btn2').style.visibility ="hide";
+function display() {
+    $("#Contentable").hide();
+    $("#savebtn").hide();
+    $("#stylebar").hide();
+   }
 

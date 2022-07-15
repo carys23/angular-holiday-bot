@@ -3,16 +3,22 @@ body {
     display: flex;
     margin: 0px;
 }
-
+#btn2 {
+    display: flex;
+    flex-direction: column;
+    background-color: brown;
+    justify-content: space-around;
+}
 #bot {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
     background-color: rgb(228, 235, 235);
-    width: 25%;
-    height: 35%;
     position: absolute;
     bottom: 9px;
     right: 11px;
-    padding: 10px;
+    padding: 22px;
     flex: 1;
     flex-wrap: wrap;
 
@@ -25,8 +31,7 @@ body {
 
 button.mat-stroked-button {
     font-size: 14px;
-    height: 42px;
-    margin: 10px;
+   
     /* display: flex; */
     flex-direction: row;
 }
@@ -48,17 +53,6 @@ button.mat-stroked-button {
 }
 
 
-.login-div {
-    display: flex;
-    height: 60%;
-    /* width: 60%;  */
-    align-items: center;
-    text-align: center;
-    flex-direction: row;
-    /* justify-content: center; */
-
-}
-
 .bot-image {
     display: flex;
     width: 100px;
@@ -77,45 +71,27 @@ button.mat-stroked-button {
 }
 
 .mat-raised-button {
-    /* display: flex; */
+    display: flex;
     /* padding-top: 90px; */
     flex-direction: row;
-    width: 70px;
-    height: 50px;
     justify-content: center;
     flex-wrap: wrap;
     background-color: rgba(43, 18, 58, 0.418);
     justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-around;
 
 }
 
-/* #btn, .btn {
-    display: flex;
-    /* padding-top: 90px; */
-    /* flex-direction: row;} */
 
-
-/* #btn2{
-    display: flex;
-    flex-direction: row;
-    width: 70px;
-    height: 50px;
-    justify-content: center;
-    background-color: rgba(43, 18, 58, 0.418);
-    flex-wrap: wrap;
-} */
 
 #continents-btn {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 50px;
 }
 .button,
 .login {
-    /* display: flex; */
-    width: 20%;
-    height: 20%;
     justify-content: center;
     flex-direction: row;
     /* margin-right: 0; */

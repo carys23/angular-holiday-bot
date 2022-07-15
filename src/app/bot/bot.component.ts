@@ -20,7 +20,6 @@ export class BotComponent implements OnInit {
   data = myjson;
   enter: any;
   login = true;
-  show = true;
   hideBtn: any ='welcome';
   continents: any;
   africa = africaHoliday;
@@ -40,7 +39,11 @@ export class BotComponent implements OnInit {
   eurButton  = true;
   usaButton = true;
   textShow = true;
-  showAfrica = false;
+  showAfrica = true;
+  // clicked = false;
+  asiaVisible = true;
+  public show: boolean = false;
+  public buttonName:any = 'Show';
 
   
   list = [this.ausButton, this.usaButton, this.africaButton, this.nAButton, this.antButton, this.asiaButton, this.eurButton, this.usaButton ]
@@ -51,26 +54,51 @@ export class BotComponent implements OnInit {
 
   constructor() { }
   
+  toggle() {
+    this.show = !this.show;
 
-  
+    // CHANGE THE NAME OF THE BUTTON.
+    if(this.show)  
+      this.buttonName = "Hide";
+    else
+      this.buttonName = "Show";
+  }
+  actionMethod($event: MouseEvent) {
+    ($event.target as HTMLButtonElement).disabled = true;
+    // Do actions.
+    this.asia
+}
 
 
+// clicked() {// only show clicked img info 
+//   this.show=!this.show;
+// };
+oClick()
+{
+  this.hideBtn
+  // this.africa;
+  // this.asia;
+  // this.aus; 
+  // this.usa; 
+  // this.eur; 
+  // this.ant; 
+  // this.nAmerica; 
+}
   loginClick() {
     this.login = false;
-   
+  
 }
 
   africaClick(){
     this.africa
     this.hideBtn
-    // this.africaButton = false
-    this.showAfrica = true
+    // this.showAfrica = true
     
   }
   asiaClick(){
     this.asia
     this.hideBtn
-    this.asiaButton = false
+    // this.asiaButton = false
 
   }
 
