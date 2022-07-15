@@ -19,7 +19,9 @@ declare var hideBtn: any;
 export class BotComponent implements OnInit {
   data = myjson;
   enter: any;
-  hideBtn: any;
+  login = true;
+  show = true;
+  hideBtn: any ='welcome';
   continents: any;
   africa = africaHoliday;
   asia = asiaHoliday;
@@ -28,6 +30,7 @@ export class BotComponent implements OnInit {
   eur = europeHoliday;
   ant = antarcticaHoliday;
   nAmerica = northAmericaHoliday;
+  isDisabled = true;
   isButtonVisible = true;
   africaButton = true;
   asiaButton = true;
@@ -36,18 +39,32 @@ export class BotComponent implements OnInit {
   antButton  = true;
   eurButton  = true;
   usaButton = true;
-  disabled = false;
-  list = [this.ausButton, this.usaButton, this.africaButton, this.nAButton, this.antButton, this.asiaButton, this.eurButton, this.usaButton ]
+  textShow = true;
+  showAfrica = false;
 
+  
+  list = [this.ausButton, this.usaButton, this.africaButton, this.nAButton, this.antButton, this.asiaButton, this.eurButton, this.usaButton ]
+  
+ 
 
   // msg:string;
 
   constructor() { }
+  
+
+  
+
+
+  loginClick() {
+    this.login = false;
+   
+}
 
   africaClick(){
     this.africa
     this.hideBtn
-    this.africaButton = false
+    // this.africaButton = false
+    this.showAfrica = true
     
   }
   asiaClick(){
