@@ -2,6 +2,14 @@ html, body {
     display: flex;
     margin:0px;
   }
+ 
+
+
+  button.mat-stroked-button {
+    font-size: 14px;
+    height: 42px;
+    margin: 10px;
+  }
 
 .response {
     padding-top: 12px;
@@ -55,7 +63,7 @@ html, body {
 }
 
 .mat-raised-button{
-    display: flex;
+    /* display: flex; */
     /* padding-top: 90px; */
     flex-direction: row;
     width: 70px;
@@ -73,13 +81,33 @@ html, body {
     width: 20%;
     height: 20%;
     justify-content: center;
-   
     /* margin-right: 0; */
 
 }
+.b {
+    /* display: flex; */
+    /* padding-top: 90px; */
+    flex-direction: row;
+    width: 70px;
+    height: 50px;
+}
 
+#btn{
+    /* display: flex; */
+    /* padding-top: 90px; */
+    /* flex-direction: row; */
+    width: 70px;
+    height: 50px;
+    flex-wrap: nowrap;
+    background-color: rgba(43, 18, 58, 0.418);
+    justify-content: space-around;
+}
 
-#buttons {
+#btn:hover {
+    background-color:#767eac;
+}
+
+/* #buttons {
     display: flex;
     flex-direction: column;
     width: 5%;
@@ -87,7 +115,7 @@ html, body {
     flex-wrap: wrap;
     align-items: center;
     
-}
+} */
 
 
 

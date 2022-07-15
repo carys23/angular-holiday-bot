@@ -4,8 +4,8 @@
         <img class="bot-image" src="assets/monkey.png" alt="bot-image">
 
         <!-- login -->
-        <!-- <button mat-button-update mat-raised-button color="primary" class="login" id="login" (click)="this.isButtonVisible = false">
-            {{isButtonVisible? 'Guest' : 'Welcome'}}
+        <button mat-button-update mat-raised-button color="primary" class="login" id="login" (click)="this.isButtonVisible = false">
+             {{isButtonVisible? 'Guest' : 'Welcome'}} 
             <div *ngIf="isButtonVisible;  then thenBlock else helloBlock">
             </div>
         </button>
@@ -20,7 +20,7 @@
             <div class="container" id="first-choice">
             </div>
 
-        </ng-template> -->
+       
 
              <!-- Asia -->
 
@@ -51,7 +51,7 @@
 
             <!-- Africa -->
 
-            <button mat-button-update mat-raised-button color="primary" class="b" id="btn" (click)="this.africaButton = false">
+            <button mat-button-update mat-raised-button color="primary"  id="btn" (click)="this.africaButton = false">
                 
                 {{africaButton? 'Africa' : 'Africa'}}
                 <div *ngIf="africaButton; then thenBlock else africaBlock"> </div>
@@ -66,7 +66,7 @@
             <ng-template #africaBlock>
                 <div *ngFor="let countries of africa">
 
-                    <button mat-button-update mat-raised-button color="primary" class="b" id="btn" (click)="africaClick()">
+                    <button mat-button-update mat-raised-button color="primary" color="primary" class="b" id="btn" (click)="africaClick()">
                         {{ countries.Country }}
                     </button>
                 </div> 
@@ -98,10 +98,11 @@
                     </button>
                 </div> 
 
-                </ng-template>
+                </ng-template> 
+                
 
                  <!-- Antarcica -->
-                 <button mat-button-update mat-raised-button color="primary" class="b" id="btn" (click)="this.antButton = false">
+                  <button mat-button-update mat-raised-button color="primary"  class="b" id="btn" (click)="this.antButton = false">
                 
                     {{antButton? 'Antarcica' : 'Antarcica'}}
                     <div *ngIf="antButton; then thenBlock else antBlock"> </div>
@@ -121,7 +122,7 @@
                         </button>
                     </div> 
     
-                    </ng-template>
+                    </ng-template> 
 
             <!-- Australia -->
             <button mat-button-update mat-raised-button color="primary" class="b" id="btn" (click)="this.ausButton = false">
@@ -144,49 +145,35 @@
                     </button>
                 </div> 
 
-                </ng-template>
+                </ng-template> 
 
 
-                <!-- usa -->
+                <!-- nortn amercia  -->
 
-                <button mat-button-update mat-raised-button color="primary" class="b" id="btn" (click)="this.usaButton = false">
+              <button mat-button-update mat-raised-button color="primary"  class="b" id="btn" (click)="this.usaButton = false">
                 
                     {{usaButton? 'North America' : 'North America'}}
                     <div *ngIf="usaButton; then thenBlock else usaBlock"> </div>
-                  
+                
                 </button>
                 <ng-template #thenBlock>
                     
-     
+    
                 </ng-template>
                 
     
                 <ng-template #usaBlock>
                     <div *ngFor="let countries of usa">
     
-                        <button mat-button-update mat-raised-button color="primary" class="b" id="btn" (click)="usaClick()">
+                        <button mat-button-update mat-raised-button color="primary"  id="btn" (click)="usaClick()">
                             {{ countries.Country }}
                         </button>
                     </div> 
     
-                    </ng-template>
-            <!-- nortn amercia  -->
+                    </ng-template> 
+        
 
-
-                    
-
-      
-            
-
-
-
-
-
-
-
-
-
-
+                </ng-template>
 
             <!-- </div> -->
             <!-- </body> -->
