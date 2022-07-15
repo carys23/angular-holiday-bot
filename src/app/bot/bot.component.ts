@@ -9,6 +9,7 @@ declare var europeHoliday: any;
 declare var antarcticaHoliday: any;
 declare var northAmericaHoliday: any;
 declare var australiaHoliday: any;
+declare var hideBtn: any;
 @Component({
   selector: 'app-bot',
   templateUrl: './bot.component.html',
@@ -18,6 +19,7 @@ declare var australiaHoliday: any;
 export class BotComponent implements OnInit {
   data = myjson;
   enter: any;
+  hideBtn: any;
   continents: any;
   africa = africaHoliday;
   asia = asiaHoliday;
@@ -34,6 +36,9 @@ export class BotComponent implements OnInit {
   antButton  = true;
   eurButton  = true;
   usaButton = true;
+  disabled = false;
+  list = [this.ausButton, this.usaButton, this.africaButton, this.nAButton, this.antButton, this.asiaButton, this.eurButton, this.usaButton ]
+
 
   // msg:string;
 
@@ -41,38 +46,37 @@ export class BotComponent implements OnInit {
 
   africaClick(){
     this.africa
-    
-    return this.africa
+    this.hideBtn
   }
   asiaClick(){
     this.asia
-    return this.asia
+    this.hideBtn
+
   }
 
   ausClick(){
     this.aus
-    return this.aus
+    this.hideBtn
   }
 
   usaClick(){
     this.usa
-    return this.usa
+    this.hideBtn
   }
 
   antClick(){
-    
     this.ant
-    return this.ant
+    this.hideBtn
   }
 
   nAmericaClick(){
     this.ant
-    return this.ant
+    this.hideBtn
   }
 
   eurClick(){
     this.eur
-    return this.eur
+    this.hideBtn
   }
 
 
@@ -80,7 +84,6 @@ export class BotComponent implements OnInit {
   clickEvent()
   {
     this.enter= true;
-    return this.enter
   }
 
   ngOnInit(): void {

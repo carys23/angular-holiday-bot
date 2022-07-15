@@ -26,66 +26,23 @@
 
 
             <!-- Asia -->
-            <button mat-button-update mat-raised-button color="primary" class="b" id="asia" *ngIf="this.asiaButton"
+
+
+            <button mat-button-update mat-raised-button color="primary" class="b" id="btn" *ngIf="this.asiaButton"
                 (click)=" this.asiaButton = false">
                 <div *ngIf="this.asiaButton" (click)="this.asiaButton = false" then thenBlock>
                     {{asiaButton? 'Asia' : 'false'}}
                 </div>
             </button>
 
+
             <!-- Africa -->
-             <button mat-button-update mat-raised-button color="primary" class="b" id="africa" *ngIf="this.africaButton"
+            <button mat-button-update mat-raised-button color="primary" class="b" id="btn" *ngIf="this.africaButton"
                 (click)=" this.africaButton = false">
                 <div *ngIf="this.africaButton" (click)="this.africaButton = false" then thenBlock>
-                    {{africaButton? 'Africa' : 'false'}}
+                    {{africaButton? 'Africa' : 'view'}}
                 </div>
             </button>
-
-            
-
-                    <!-- North America -->
-                    <button mat-button-update mat-raised-button color="primary" class="b" id="north"
-                    *ngIf="this.nAButton" (click)=" this.nAButton = false">
-                    <div *ngIf="this.usaButton" (click)="this.nAButton = false" then thenBlock>
-                        {{nAButton? 'North America' : 'false'}}
-                    </div>
-                </button>
-
-
-
-                <!-- USA -->
-                <button mat-button-update mat-raised-button color="primary" class="b" id="usa"
-                    *ngIf="this.usaButton" (click)=" this.usaButton = false">
-                    <div *ngIf="this.usaButton" (click)="this.usaButton = false" then thenBlock>
-                        {{usaButton? 'USA' : 'false'}}
-                    </div>
-                </button>
-
-
-                    <!-- Antarcica -->
-                    <button mat-button-update mat-raised-button color="primary" class="b" id="antarcica"
-                        (click)=" this.antButton = false">
-                        <div *ngIf="this.antButton" (click)="this.antButton = false" then thenBlock>
-                            {{antButton? 'Antarcica' : 'false'}}
-                        </div>
-                    </button>
-
-                    <!-- Europe -->
-                    <button mat-button-update mat-raised-button color="primary" class="b" id="europe"
-                        (click)=" this.eurButton = false">
-                        <div *ngIf="this.eurButton" (click)="this.eurButton = false" then thenBlock>
-                            {{eurButton? 'Europe' : 'false'}}
-                        </div>
-                    </button>
-
-                    <!-- Australia -->
-                    <button mat-button-update mat-raised-button color="primary" class="b" id="australia"
-                        (click)=" this.ausButton = false">
-                        <div *ngIf="this.ausButton" (click)="this.ausButton = false" then thenBlock>
-                            {{ausButton? 'Australia' : 'false'}}
-                        </div>
-                    </button>
-
 
             <!-- Asia -->
 
@@ -96,21 +53,22 @@
             </ng-template>
 
             <ng-template #elseBlock>
-             
-                    
+
                 <div *ngFor="let countries of asia">
 
-                    <button mat-button-update mat-raised-button color="primary" class="b" id="asia" (click)="asiaClick()">
-                                 {{ countries.Country }}
+                    <button mat-button-update mat-raised-button color="primary" class="b" id="asia"
+                        (click)="asiaClick()">
+                        {{ countries.Country }}
                     </button>
-           
-                </div>
-               
-          
-                
-                   <!-- USA -->
 
-<!--              
+                </div>
+
+
+
+
+                
+            <!-- USA -->
+
             <div *ngIf="this.usaButton; then thenBlock else elseBlock"> </div>
 
             <ng-template #thenBlock>
@@ -127,15 +85,67 @@
                     </button>
     
                     
-                </div> -->
-           
-            
+                </div> 
+
+            </ng-template>
 
 
-                
 
-                <!-- North America -->
-                   
+
+            <!-- North America -->
+            <!-- <button mat-button-update mat-raised-button color="primary" class="b" id="btn"
+                    *ngIf="this.nAButton" (click)=" this.nAButton = false">
+                    <div *ngIf="this.usaButton" (click)="this.nAButton = false" then thenBlock>
+                        {{nAButton? 'North America' : 'false'}}
+                    </div>
+                </button> -->
+
+
+
+            <!-- USA -->
+            <!-- <button mat-button-update mat-raised-button color="primary" class="b" id="btn"> 
+                    <div *ngIf="this.usaButton" (click)="this.usaButton = false" then thenBlock>
+                        {{usaButton? 'USA' : 'false'}}
+                    </div>
+                </button> -->
+
+
+            <!-- Antarcica -->
+            <!-- <button mat-button-update mat-raised-button color="primary" class="b" id="btn"
+                        (click)=" this.antButton = false">
+                        <div *ngIf="this.antButton" (click)="this.antButton = false" then thenBlock>
+                            {{antButton? 'Antarcica' : 'false'}}
+                        </div>
+                    </button> -->
+
+            <!-- Europe -->
+            <!-- <button mat-button-update mat-raised-button color="primary" class="b" id="btn"
+                        (click)=" this.eurButton = false">
+                        <div *ngIf="this.eurButton" (click)="this.eurButton = false" then thenBlock>
+                            {{eurButton? 'Europe' : 'false'}}
+                        </div>
+                    </button> -->
+
+            <!-- Australia -->
+            <!-- <button mat-button-update mat-raised-button color="primary" class="b" id="btn"
+                        (click)=" this.ausButton = false">
+                        <div *ngIf="this.ausButton" (click)="this.ausButton = false" then thenBlock>
+                            {{ausButton? 'Australia' : 'false'}}
+                        </div>
+                    </button> -->
+
+
+
+
+
+
+
+
+
+
+
+            <!-- North America -->
+
             <!-- <div *ngIf="this.nAButton; then thenBlock else elseBlock"> </div>
 
             <ng-template #thenBlock>
@@ -174,8 +184,8 @@
                     
                 </div> -->
 
-                <!-- aus  -->
-                <!-- <div *ngIf="this.ausButton; then thenBlock else elseBlock"> </div>
+            <!-- aus  -->
+            <!-- <div *ngIf="this.ausButton; then thenBlock else elseBlock"> </div>
 
                 <ng-template #thenBlock>
     
@@ -192,9 +202,9 @@
                         
                     </div> -->
 
-                    <!-- ant -->
+            <!-- ant -->
 
-                    <div *ngIf="this.antButton; then thenBlock else elseBlock"> </div>
+            <!-- <div *ngIf="this.antButton; then thenBlock else elseBlock"> </div>
 
                     <ng-template #thenBlock>
         
@@ -210,13 +220,13 @@
                             </button>
                             {{ ants.Country }}
                          
-                        </div> 
-
-
-                </ng-template>
+                        </div>  -->
 
 
 
 
-                <!-- </div> -->
-                <!-- </body> -->
+
+
+
+            <!-- </div> -->
+            <!-- </body> -->
