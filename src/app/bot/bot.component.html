@@ -8,11 +8,11 @@
 
 
         <!-- login -->
-        <button mat-button-update mat-raised-button color="primary" class="login" id="btn2" *ngIf="this.login"
+        <!-- <button mat-button-update mat-raised-button color="primary" class="login" id="btn2" *ngIf="this.login"
             (click)="this.login = false">
             {{login? 'Guest' : 'Welcome'}}
             <!-- <div *ngIf="this.isButtonVisible" (click)="clicked();"> </div> -->
-            <div *ngIf="this.isButtonVisible;  then thenBlock else helloBlock"> </div>
+            <!-- <div *ngIf="this.isButtonVisible;  then thenBlock else helloBlock"> </div>
             <div id="questions" class="questions">Holidays are comming </div>
         </button>
 
@@ -22,20 +22,24 @@
 
         </ng-template>
 
-        <ng-template #helloBlock>
+        <ng-template #helloBlock> 
 
-            <div id="questions" class="questions">Hello what location would you like to take your holiday in? </div>
+            
+            </ng-template>  -->
 
-            <!-- <div id="continents-btn"> -->
-            </ng-template> 
+<!-- 
+            mine -->
 
-            <button (click)="toggle()" id="bt">
+            <button mat-button-update mat-raised-button color="primary" class="login" id="btn2" (click)="toggle()" id="btn2" *ngIf="this.login"
+            (click)="this.login = false">
+            <!-- {{login? 'Guest' : 'Welcome'}} -->
                 {{buttonName}}
             </button>
 
             <ng-container *ngIf="show">
 
-                hello world
+                <div id="questions" class="questions">Hello what location would you like to take your holiday in? </div>
+
             </ng-container>
             
 

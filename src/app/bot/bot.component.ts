@@ -43,7 +43,7 @@ export class BotComponent implements OnInit {
   // clicked = false;
   asiaVisible = true;
   public show: boolean = false;
-  public buttonName:any = 'Show';
+  public buttonName:any = 'Guest';
 
   
   list = [this.ausButton, this.usaButton, this.africaButton, this.nAButton, this.antButton, this.asiaButton, this.eurButton, this.usaButton ]
