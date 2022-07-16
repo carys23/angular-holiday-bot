@@ -37,15 +37,66 @@
         </button>
 
         <button mat-button-update mat-raised-button color="primary" class="btn2" id="btn2">Africa</button>
-        <button mat-button-update mat-raised-button color="primary" class="btn2" id="btn2">Asia</button>
+        
+
+
+        <!-- <ng-container *ngIf="showAsia">
+
+            <div id="questions" class="questions">list </div>  -->
+
+            <button mat-button-update mat-raised-button color="primary" class="btn2" id="btn2" (click)="asiaClicked()" id="btn2"
+            *ngIf="this.asiaButton" (click)="this.asiaButton = false">
+
+         
+            {{asiaButton? 'Asia' : 'asia'}}
+            <div *ngIf="this.asiaButton;  then thenBlock else asiaBlock"></div>
+          
+ 
+                  </button> 
+                  <ng-template #thenBlock>
+                    <div *ngFor="let countries of asia">
+          
+                        <button mat-button-update mat-raised-button color="primary" class="b" id="btn2" (click)="asiaClick()">
+                            {{ countries.Country }}
+                        </button>
+                    </div>
+          
+                  </ng-template>
+                  
+          
+                  <ng-template #asiaBlock>
+                   
+                    
+                      </ng-template>
+
+<!-- 
+
+
+    
+
+            <div *ngFor="let countries of asia">
+
+                <button mat-button-update mat-raised-button color="primary" color="primary" class="b" id="btn2"
+                    (click)="asiaClick()">
+                   
+                </button>
+            </div>
+
+            <div id="questions" class="questions">Country</div>
+        </button> -->
+
+
+
+
+
+
+            
+        
         <button mat-button-update mat-raised-button color="primary" class="btn2" id="btn2">Australia</button>
         <button mat-button-update mat-raised-button color="primary" class="btn2" id="btn2">Antarctica</button>
     </ng-container>
 
         <ng-container *ngIf="showAsia">
-
-
-
 
 
 
@@ -72,27 +123,7 @@
 
 
 
-<!-- 
 
-            <button mat-button-update mat-raised-button color="primary" class="btn2" id="btn2" (click)="asiaClicked()" id="btn2"
-            *ngIf="this.asiaButton" (click)="this.asiaButton = false">
-
-    
-
-            <div *ngFor="let countries of asia">
-
-                <button mat-button-update mat-raised-button color="primary" color="primary" class="b" id="btn2"
-                    (click)="asiaClick()">
-                   
-                </button>
-            </div>
-
-            <div id="questions" class="questions">Country</div>
-        </button>
-
-        <ng-container *ngIf="showAsia">
-
-            <div id="questions" class="questions">list </div> -->
 
 
 
