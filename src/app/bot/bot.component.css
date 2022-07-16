@@ -5,9 +5,11 @@ body {
 }
 #btn2 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: brown;
     justify-content: space-around;
+    position: relative;
+   
 }
 #bot {
     display: flex;
@@ -21,6 +23,9 @@ body {
     padding: 22px;
     flex: 1;
     flex-wrap: wrap;
+    /* height: 20%;
+    width: 20%; */
+
 
 }
 
@@ -30,7 +35,7 @@ body {
 }
 
 button.mat-stroked-button {
-    font-size: 14px;
+    font-size: 12px;
    
     /* display: flex; */
     flex-direction: row;
@@ -48,7 +53,8 @@ button.mat-stroked-button {
     text-align: center;
     color: black;
     flex-direction: column;
-    position: absolute;
+    
+    
 
 }
 
@@ -58,6 +64,7 @@ button.mat-stroked-button {
     width: 100px;
     height: 100px;
     align-items: center;
+    position: relative;
     /* flex-direction: row; */
 
 }
@@ -80,6 +87,9 @@ button.mat-stroked-button {
     justify-content: space-around;
     flex-wrap: wrap;
     justify-content: space-around;
+    position: relative;
+    margin-top: 30px;
+
 
 }
 
