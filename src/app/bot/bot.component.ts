@@ -42,8 +42,13 @@ export class BotComponent implements OnInit {
   showAfrica = true;
   // clicked = false;
   asiaVisible = true;
+  countryButton = true;
   public show: boolean = false;
   public buttonName:any = 'Guest';
+  public showAsia: boolean = false;
+  public asiaBtn:any = 'Guest';
+  public showCountries: boolean = false;
+  public countries:any = 'Guest';
 
   
   list = [this.ausButton, this.usaButton, this.africaButton, this.nAButton, this.antButton, this.asiaButton, this.eurButton, this.usaButton ]
@@ -54,7 +59,19 @@ export class BotComponent implements OnInit {
 
   constructor() { }
   
-  toggle() {
+  countryClicked(){
+    this.showCountries = !this.showCountries
+
+    // CHANGE THE NAME OF THE BUTTON.
+    if(this.showCountries)  
+      this.countries = "Hide";
+    else
+      this.countries = "Show";
+  }
+
+
+
+  loginClicked() {
     this.show = !this.show;
 
     // CHANGE THE NAME OF THE BUTTON.
@@ -63,31 +80,21 @@ export class BotComponent implements OnInit {
     else
       this.buttonName = "Show";
   }
-  actionMethod($event: MouseEvent) {
-    ($event.target as HTMLButtonElement).disabled = true;
-    // Do actions.
-    this.asia
-}
+
+  asiaClicked() {
+    this.showAsia = !this.showAsia;
+
+    // CHANGE THE NAME OF THE BUTTON.
+    if(this.showAsia)  
+      this.asiaBtn = "Hide";
+    else
+      this.asiaBtn = "Show";
+  }
 
 
-// clicked() {// only show clicked img info 
-//   this.show=!this.show;
-// };
-oClick()
-{
-  this.hideBtn
-  // this.africa;
-  // this.asia;
-  // this.aus; 
-  // this.usa; 
-  // this.eur; 
-  // this.ant; 
-  // this.nAmerica; 
-}
-  loginClick() {
-    this.login = false;
-  
-}
+
+
+
 
   africaClick(){
     this.africa
