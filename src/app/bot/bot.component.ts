@@ -61,10 +61,13 @@ export class BotComponent implements OnInit {
   
   countryClicked(){
     this.showCountries = !this.showCountries
+    this.hideBtn
 
     // CHANGE THE NAME OF THE BUTTON.
-    if(this.showCountries)  
+    if(this.showCountries) 
+      
       this.countries = "Hide";
+      
     else
       this.countries = "Show";
   }
@@ -72,10 +75,12 @@ export class BotComponent implements OnInit {
 
 
   loginClicked() {
+    
     this.show = !this.show;
 
     // CHANGE THE NAME OF THE BUTTON.
-    if(this.show)  
+    if(this.show)
+    this.hideBtn,  
       this.buttonName = "Hide";
     else
       this.buttonName = "Show";
@@ -91,7 +96,9 @@ export class BotComponent implements OnInit {
       this.asiaBtn = "Show";
   }
 
-
+  deleteClick(){
+    this.hideBtn
+  }
 
 
 
